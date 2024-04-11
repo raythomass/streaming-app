@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './pages/Homepage';
 import Nav from './components/Nav';
+import Movies from './components/Movies';
 
 function App() {
   const [count, setCount] = useState(0)

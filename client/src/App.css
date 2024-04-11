@@ -78,3 +78,36 @@
 }
 
 
+/*  -------- HOME MOVIES --------  */
+
+.movies {
+  font-family: "Manrope", sans-serif;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.movie-details {
+
+}
+
+.movie-title {
+  font-weight: bold;
+}
+
+.movie-img {
+  max-width: 200px;
+  transition: max-width 0.2s ease-in-out ;
+}
+
+.movie-img:hover {
+  max-width: 215px; 
+}
+
+

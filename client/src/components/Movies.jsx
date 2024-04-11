@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import Movies from '../components/Movies';
 
-function Home () {
+function Movies() {
     const [movies, setMovies] = useState([])
 
     const fetchMovies = async () => {
@@ -28,10 +27,27 @@ function Home () {
 
     return(
         <>
-        <Movies></Movies>
+        <h1>Hello World</h1>
+        <div className='movies'>
+            <div className='movie-list'>
+                {movies.map((movie) => (
+                    <>
+                    <div className='movie-details'>
+                        <img className='movie-img' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+                        {/* <p className='movie-title'> {movie.original_title} </p> */}
+                    </div>
+                    </>
+                ))}
+            </div>
+            {/* <div>
+                {movies.map((movie) => (
+                    // <p> {movie.original_title} </p>
+                    <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+                ))}
+            </div> */}
+        </div>
         </>
     )
 }
 
-export default Home;
-
+export default Movies;
