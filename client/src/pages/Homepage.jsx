@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Movies from '../components/Movies';
 
-function Home () {
+function HomePage () {
     const [movies, setMovies] = useState([])
 
     const fetchMovies = async () => {
@@ -33,5 +33,5 @@ function Home () {
     )
 }
 
-export default Home;
+export default HomePage;
 
