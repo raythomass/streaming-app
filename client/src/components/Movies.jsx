@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import MoviePage from '../pages/MoviePage';
+import MoviePage from './MoviePage';
 
 function Movies() {
     const [movies, setMovies] = useState([])
@@ -19,9 +19,9 @@ function Movies() {
         .then(res => res.json())
         .then(json => setMovies(json.results))
         .catch(err => console.error('error:' + err));
-    };
 
-    console.log(movies);
+        console.log(movies);
+    };
 
     useEffect(() => {
         fetchMovies();
@@ -34,24 +34,14 @@ function Movies() {
             <div className='movie-list'>
                 {movies.map((movie) => (
                     <>
-                    {/* <div className='movie-details'>
-                        <img className='movie-img' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
-                        <p className='movie-title'> {movie.original_title} </p>
-                    </div> */}
                     <div className='movie-details'>
-                        <Link to='/MoviePage'>
+                        <Link to={`/MoviePage/${movie.id}`}>
                             <img className='movie-img' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
                         </Link>
                     </div>
                     </>
                 ))}
             </div>
-            {/* <div>
-                {movies.map((movie) => (
-                    // <p> {movie.original_title} </p>
-                    <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
-                ))}
-            </div> */}
         </div>
         </>
     )

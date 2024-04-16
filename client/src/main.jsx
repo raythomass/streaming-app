@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import HomePage from './pages/Homepage.jsx';
-import MoviePage from './pages/MoviePage.jsx';
+import MoviePage from './components/MoviePage.jsx';
 import './index.css';
 
 const router = createBrowserRouter ([
@@ -16,7 +16,7 @@ const router = createBrowserRouter ([
         element: <HomePage/>
       },
       {
-        path: '/MoviePage',
+        path: '/MoviePage/:id',
         element: <MoviePage/>
       },
     ]
