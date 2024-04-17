@@ -5,10 +5,10 @@ function MoviePage() {
 
     const [ movie, setMovie] = useState([]);
 
+    const { id } = useParams;
+
 
     const fetchOneMovie = async () => {
-
-        const id = '693134';
 
         const url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
         console.log(url)
