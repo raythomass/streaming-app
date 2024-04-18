@@ -10,11 +10,13 @@ function MoviePage() {
     const { id } = useParams();
 
     const fetchMovie = async () => {
-        const movieData = await API.fetchSingleMovie(id);
+        const { data } = await API.fetchSingleMovie(id)
 
-        setSingleMovie(movieData)
-        console.log(movieData)
-    };
+        setSingleMovie(data);
+        console.log(singleMovie);
+    }
+
+    
 
     useEffect(() => {
         fetchMovie();
@@ -22,14 +24,13 @@ function MoviePage() {
 
       return (
         <>
+        <h1>Hello Movie Page</h1>
         <div className='movie-list'>
-                {singleMovie?.map((singleMovie) => (
                     <>
                     <div className='movie-details'>
-                        <h1>{singleMovie.orignal_title}</h1>
+                        <h1>{singleMovie.original_title}</h1>
                     </div>
                     </>
-                ))}
             </div></>
       )
 }
