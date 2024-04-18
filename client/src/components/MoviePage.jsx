@@ -13,7 +13,7 @@ function MoviePage() {
         const { data } = await API.fetchSingleMovie(id)
 
         setSingleMovie(data);
-        console.log(singleMovie);
+        console.log(data);
     }
 
     
@@ -29,6 +29,8 @@ function MoviePage() {
                     <>
                     <div className='movie-details'>
                         <h1>{singleMovie.original_title}</h1>
+                        <h3>{singleMovie.tagline}</h3>
+                        <p>{singleMovie.runtime} minutes</p>
                     </div>
                     </>
             </div></>
