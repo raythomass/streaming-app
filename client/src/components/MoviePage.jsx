@@ -1,45 +1,37 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import API from "../utils/API";
 
 function MoviePage() {
 
-    const [ movie, setMovie] = useState([]);
+    const [singleMovie, setSingleMovie] = useState([]);
 
-    const { id } = useParams;
+    const { id } = useParams();
 
+    const fetchMovie = async () => {
+        const movieData = await API.fetchSingleMovie(id);
 
-    const fetchOneMovie = async () => {
-
-        const url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
-        console.log(url)
-        const options = {
-        method: 'GET',
-        headers: {
-            accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MzY0NzQ0ZmM0YmM1MTkxMmFhYTQ2ZmVjZDk1OGQwNiIsInN1YiI6IjY1ZjUxNDA1Yjk3NDQyMDE2NGY5NGZmMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rZbOx0atd3X7nEtWaPws8f3YenyQID1G9Hr7bbym2ek'
-        }
-        };
-    
-    fetch(url, options)
-      .then(res => res.json())
-      .then(json => console.log(json.results))
-      .catch(err => console.error('error:' + err));
-
+        setSingleMovie(movieData)
+        console.log(movieData)
     };
 
     useEffect(() => {
-        fetchOneMovie()
-    },[])
+        fetchMovie();
+      }, []);
 
-
-
-
-
-    return (
-       <>
-       <p>{movie.id}</p>
-       </>
-    )
+      return (
+        <>
+        <div className='movie-list'>
+                {singleMovie?.map((singleMovie) => (
+                    <>
+                    <div className='movie-details'>
+                        <h1>{singleMovie.orignal_title}</h1>
+                    </div>
+                    </>
+                ))}
+            </div></>
+      )
 }
 
 export default MoviePage;
