@@ -78,9 +78,9 @@
 }
 
 
-/*  -------- HOME MOVIES --------  */
+/*  -------- HOMEPAGE --------  */
 
-.movies {
+.homepage {
   font-family: "Manrope", sans-serif;
 }
 
@@ -89,14 +89,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
 }
-
-.movie-details {
-
-}
-
 .movie-title {
   font-weight: bold;
 }
@@ -110,4 +106,42 @@
   max-width: 215px; 
 }
 
+
+/*  -------- MOVIE PAGE --------  */
+
+.single-movie-section {
+  display:flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  gap: 50px;
+}
+
+.movie-details {
+  font-family: "Manrope", sans-serif;
+}
+
+.movie-details p {
+  margin: 0px;
+}
+
+.movie-title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.movie-tagline {
+  font-size: 16px;
+  max-width: 60%;
+}
+
+.movie-runtime {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.single-movie-img {
+  max-width: 300px;
+}
 
