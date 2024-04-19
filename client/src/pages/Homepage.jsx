@@ -30,23 +30,12 @@ function HomePage () {
 
     return(
         <>
-        <h1>Hello World</h1>
-        <div className='movies'>
-            {/* <div className='movie-list'>
-                {movies.map((movie) => (
-                    <>
-                    <div className='movie-details'>
-                        <Link to={`/MoviePage/${movie.id}`}>
-                            <img className='movie-img' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
-                        </Link>
-                    </div>
-                    </>
-                ))}
-            </div> */}
+        {/* <h1>Hello World</h1> */}
+        <div className='homepage'>
             <div className='movie-list'>
                 {movies.map((movie) => (
                     <>
-                    <div className='movie-details'>
+                    <div className='movie-teaser'>
                         <Link to={`/MoviePage/${movie.id}`}>
                             <Movies poster={movie.poster_path} title={movie.original_title}/>
                         </Link>

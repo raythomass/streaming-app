@@ -21,16 +21,19 @@ function MoviePage() {
     useEffect(() => {
         fetchMovie();
       }, []);
-
+      
       return (
         <>
-        <h1>Hello Movie Page</h1>
-        <div className='movie-list'>
+        {/* <h1>Hello Movie Page</h1> */}
+        <div className='single-movie-section'>
                     <>
-                    <div className='movie-details'>
-                        <h1>{singleMovie.original_title}</h1>
-                        <h3>{singleMovie.tagline}</h3>
-                        <p>{singleMovie.runtime} minutes</p>
+                    <div className='movie-details' >
+                        <p className="movie-title">{singleMovie.original_title}</p>
+                        <p className="movie-tagline">{singleMovie.overview}</p>
+                        <p className="movie-runtime">{singleMovie.runtime} minutes</p>
+                    </div>
+                    <div>
+                        <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
                     </div>
                     </>
             </div></>
