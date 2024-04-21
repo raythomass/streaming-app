@@ -29,8 +29,15 @@ function MoviePage() {
                     <>
                     <div className='movie-details' >
                         <p className="movie-title">{singleMovie.original_title}</p>
-                        <p className="movie-tagline">{singleMovie.overview}</p>
-                        <p className="movie-runtime">{singleMovie.runtime} minutes</p>
+                        <div className="movie-small-details">
+                            <p>{singleMovie.release_date}</p>
+                            <p>{singleMovie.runtime} minutes</p>
+                        </div>
+                        <p className="movie-overview">{singleMovie.overview}</p>
+                        <div className="movie-btns">
+                            <button>Play</button>
+                            <button>Trailer</button>
+                        </div>
                     </div>
                     <div>
                         <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
