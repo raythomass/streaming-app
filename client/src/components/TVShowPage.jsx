@@ -2,23 +2,23 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
 
-function MoviePage() {
+function TVShowPage() {
 
-    const [singleMovie, setSingleMovie] = useState([]);
+    const [singleShow, setSingleShow] = useState([]);
 
     const { id } = useParams();
 
-    const fetchMovie = async () => {
-        const { data } = await API.fetchSingleMovie(id)
+    const fetchShow = async () => {
+        const { data } = await API.fetchSingleShow(id)
 
-        setSingleMovie(data);
+        setSingleShow(data);
         console.log(data);
     }
 
     
 
     useEffect(() => {
-        fetchMovie();
+        fetchShow();
       }, []);
       
       return (
@@ -27,23 +27,23 @@ function MoviePage() {
         <div className='single-movie-section'>
                     <>
                     <div className='movie-details' >
-                        <p className="movie-title">{singleMovie.original_title}</p>
+                        <p className="movie-title">{singleShow.name}</p>
                         <div className="movie-small-details">
-                            <p>{singleMovie.release_date}</p>
-                            <p>{singleMovie.runtime} minutes</p>
+                            <p>Seasons: {singleShow.number_of_seasons}</p>
+                            <p>Episodes: {singleShow.number_of_episodes}</p>
                         </div>
-                        <p className="movie-overview">{singleMovie.overview}</p>
+                        <p className="movie-overview">{singleShow.overview}</p>
                         <div className="movie-btns">
                             <button>Play</button>
                             <button>Trailer</button>
                         </div>
                     </div>
                     <div>
-                        <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
+                        <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${singleShow.poster_path}`}></img>
                     </div>
                     </>
             </div></>
       )
 }
 
-export default MoviePage;
+export default TVShowPage;
