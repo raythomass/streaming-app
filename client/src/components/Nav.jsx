@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return(
@@ -9,12 +10,12 @@ function Nav() {
                     <h1>STREAMING APP</h1>
                 </div>
                 <div className='nav-list'>
-                    <a className='nav-link' href='#'>
+                    <Link className='nav-link' to={'/movies'}>
                         <h3>Movies</h3> 
-                    </a>
-                    <a className='nav-link' href='#'>
+                    </Link>
+                    <Link className='nav-link' to={'/tvshows'}>
                         <h3>TV Shows</h3> 
-                    </a>
+                    </Link>
                     <a className='nav-link' href='#'>
                         <h3>Genres</h3> 
                     </a>

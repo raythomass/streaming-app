@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Movies from '../components/Movies';
+import MoviePoster from '../components/MoviePoster';
 
 
 function HomePage () {
@@ -32,12 +32,13 @@ function HomePage () {
         <>
         {/* <h1>Hello World</h1> */}
         <div className='homepage'>
+            <h1> Trending Now</h1>
             <div className='movie-list'>
                 {movies.map((movie) => (
                     <>
                     <div className='movie-teaser'>
                         <Link to={`/MoviePage/${movie.id}`}>
-                            <Movies poster={movie.poster_path} title={movie.original_title}/>
+                            <MoviePoster poster={movie.poster_path} title={movie.original_title}/>
                         </Link>
                     </div>
                     </>

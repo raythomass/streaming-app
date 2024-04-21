@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import MoviePage from './MoviePage';
 
-export default function Movies({ poster, title }){
+export default function MoviePoster({ poster, title }){
     return (
         <>
             <div>
