@@ -1,32 +1,40 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TVShowPoster from "../components/TVShowPoster";
+import API from "../utils/API";
 const bearerKey = import.meta.env.VITE_BEARER_KEY;
 
 function TVShows () {
 
     const [shows, setShows] = useState([]);
 
-    const fetchShows = async () => {
-        const url = 'https://api.themoviedb.org/3/trending/tv/day?language=en-US';
-        const options = {
-            method: 'GET',
-            headers: {
-                accept: 'application/json',
-                Authorization: `Bearer ${bearerKey}`
-            }
-        };
+    // const fetchShows = async () => {
+    //     const url = 'https://api.themoviedb.org/3/trending/tv/day?language=en-US';
+    //     const options = {
+    //         method: 'GET',
+    //         headers: {
+    //             accept: 'application/json',
+    //             Authorization: `Bearer ${bearerKey}`
+    //         }
+    //     };
 
-        fetch(url, options)
-        .then(res => res.json())
-        .then(json => setShows(json.results))
-        .catch(err => console.error('error:' + err));
+    //     fetch(url, options)
+    //     .then(res => res.json())
+    //     .then(json => setShows(json.results))
+    //     .catch(err => console.error('error:' + err));
 
-        console.log(shows);
+    //     console.log(shows);
+    // };
+
+    const fetchTVShows = async () => {
+        const data  =  await API.fetchShows();
+
+        await setShows(data);
+        console.log(shows)
     };
 
     useEffect(() => {
-        fetchShows()
+        fetchTVShows()
     },[])
 
 
@@ -37,7 +45,7 @@ function TVShows () {
         <div className='homepage'>
             <h1> TV Shows</h1>
             <div className='movie-list'>
-                {shows.map((show) => (
+                {shows && shows.map((show) => (
                     <>
                     <div className='movie-teaser'>
                         <Link to={`/tvshow/${show.id}`}>
