@@ -38,8 +38,8 @@ function MoviePage() {
                             <button>Trailer</button>
                         </div>
                     </div>
-                    <div>
-                        <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
+                    <div className="movie-img">
+                        <img src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
                     </div>
                     </>
             </div></>

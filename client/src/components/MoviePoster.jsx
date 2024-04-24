@@ -5,7 +5,7 @@ export default function MoviePoster({ poster, title }){
     return (
         <>
             <div>
-                <img className='movie-img' src={`https://image.tmdb.org/t/p/w500${poster}`} />
+                <img className='poster-img' src={`https://image.tmdb.org/t/p/w500${poster}`} />
             </div>
         </>
     )
