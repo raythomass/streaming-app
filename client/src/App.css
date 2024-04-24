@@ -82,6 +82,13 @@
 
 .homepage {
   font-family: "Manrope", sans-serif;
+  background: rgb(1,0,22);
+  background: linear-gradient(90deg, rgba(1,0,22,1) 32%, rgba(8,8,106,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.page-title {
+  margin: 0px;
+  color: white;
 }
 
 .movie-list {
@@ -97,17 +104,17 @@
   font-weight: bold;
 }
 
-.movie-img {
+.poster-img {
   max-width: 200px;
   transition: max-width 0.2s ease-in-out ;
 }
 
-.movie-img:hover {
+.poster-img:hover {
   max-width: 215px; 
 }
 
 
-/*  -------- MOVIE PAGE --------  */
+/*  -------- MOVIES AND SHOWS PAGE --------  */
 
 .single-movie-section {
   display:flex;
@@ -147,7 +154,7 @@
   max-width: 70%;
 }
 
-.single-movie-img {
+.movie-img img {
   max-width: 300px;
 }
 

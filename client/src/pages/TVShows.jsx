@@ -8,33 +8,33 @@ function TVShows () {
 
     const [shows, setShows] = useState([]);
 
-    // const fetchShows = async () => {
-    //     const url = 'https://api.themoviedb.org/3/trending/tv/day?language=en-US';
-    //     const options = {
-    //         method: 'GET',
-    //         headers: {
-    //             accept: 'application/json',
-    //             Authorization: `Bearer ${bearerKey}`
-    //         }
-    //     };
+    const fetchShows = async () => {
+        const url = 'https://api.themoviedb.org/3/trending/tv/day?language=en-US';
+        const options = {
+            method: 'GET',
+            headers: {
+                accept: 'application/json',
+                Authorization: `Bearer ${bearerKey}`
+            }
+        };
 
-    //     fetch(url, options)
-    //     .then(res => res.json())
-    //     .then(json => setShows(json.results))
-    //     .catch(err => console.error('error:' + err));
+        fetch(url, options)
+        .then(res => res.json())
+        .then(json => setShows(json.results))
+        .catch(err => console.error('error:' + err));
 
-    //     console.log(shows);
-    // };
-
-    const fetchTVShows = async () => {
-        const data  =  await API.fetchShows();
-
-        await setShows(data);
-        console.log(shows)
+        console.log(shows);
     };
 
+    // const fetchTVShows = async () => {
+    //     const data  =  await API.fetchShows();
+
+    //     await setShows(data);
+    //     console.log(shows)
+    // };
+
     useEffect(() => {
-        fetchTVShows()
+        fetchShows()
     },[])
 
 
@@ -43,7 +43,7 @@ function TVShows () {
         <>
         {/* <h1>Hello World</h1> */}
         <div className='homepage'>
-            <h1> TV Shows</h1>
+            <h1 className="page-title"> TV Shows</h1>
             <div className='movie-list'>
                 {shows && shows.map((show) => (
                     <>
