@@ -46,7 +46,7 @@ function TVShowPage() {
         <div className="show-seasons">
             {singleShow.seasons?.map((season) => (
                 <>
-                <p>{season.name}</p>
+                <p className="season-name">{season.name}</p>
                 <img src={`https://image.tmdb.org/t/p/w500${season.poster_path}`}></img>
                 </>
             ))}

@@ -20,29 +20,35 @@ function MoviePage() {
     useEffect(() => {
         fetchMovie();
       }, []);
+
+      const backdrop = {
+        backgroundImage:`url(https://image.tmdb.org/t/p/w500${singleMovie.backdrop_path})`,
+      }
       
       return (
         <>
-        {/* <h1>Hello Movie Page</h1> */}
-        <div className='single-movie-section'>
-                    <>
-                    <div className='movie-details' >
-                        <p className="movie-title">{singleMovie.original_title}</p>
-                        <div className="movie-small-details">
-                            <p>{singleMovie.release_date}</p>
-                            <p>{singleMovie.runtime} minutes</p>
+        <div className="backdrop-holder" style={backdrop}>
+            <div className='single-watch-section' >
+                        <>
+                        <div className='watch-details' >
+                            <p className="watch-title">{singleMovie.original_title}</p>
+                            <div className="watch-small-details">
+                                <p>{singleMovie.release_date}</p>
+                                <p>{singleMovie.runtime} minutes</p>
+                            </div>
+                            <p className="watch-overview">{singleMovie.overview}</p>
+                            <div className="watch-btns">
+                                <button>Play</button>
+                                <button>Trailer</button>
+                            </div>
                         </div>
-                        <p className="movie-overview">{singleMovie.overview}</p>
-                        <div className="movie-btns">
-                            <button>Play</button>
-                            <button>Trailer</button>
+                        <div className="watch-img">
+                            <img src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
                         </div>
-                    </div>
-                    <div className="movie-img">
-                        <img src={`https://image.tmdb.org/t/p/w500${singleMovie.poster_path}`}></img>
-                    </div>
-                    </>
-            </div></>
+                        </>
+                </div>
+            </div>
+            </>
       )
 }
 

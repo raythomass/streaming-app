@@ -41,7 +41,6 @@ function TVShows () {
 
     return (
         <>
-        {/* <h1>Hello World</h1> */}
         <div className='homepage'>
             <h1 className="page-title"> TV Shows</h1>
             <div className='movie-list'>
