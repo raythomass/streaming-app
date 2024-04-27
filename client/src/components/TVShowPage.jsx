@@ -24,22 +24,22 @@ function TVShowPage() {
       return (
         <>
         {/* <h1>Hello Movie Page</h1> */}
-        <div className='single-movie-section'>
+        <div className='single-watch-section'>
             <>
-            <div className='movie-details' >
-                <p className="movie-title">{singleShow.name}</p>
-                <div className="movie-small-details">
+            <div className='watch-details' >
+                <p className="watch-title">{singleShow.name}</p>
+                <div className="watch-small-details">
                     <p>Seasons: {singleShow.number_of_seasons}</p>
                     <p>Episodes: {singleShow.number_of_episodes}</p>
                 </div>
-                <p className="movie-overview">{singleShow.overview}</p>
-                <div className="movie-btns">
+                <p className="watch-overview">{singleShow.overview}</p>
+                <div className="watch-btns">
                     <button>Play</button>
                     <button>Trailer</button>
                 </div>
             </div>
-            <div className="movie-img">
-                <img className="single-movie-img" src={`https://image.tmdb.org/t/p/w500${singleShow.poster_path}`}></img>
+            <div className="watch-img">
+                <img className="single-watch-img" src={`https://image.tmdb.org/t/p/w500${singleShow.poster_path}`}></img>
             </div>
             </>
         </div>

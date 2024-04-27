@@ -19,9 +19,9 @@ function Nav() {
                     <a className='nav-link' href='#'>
                         <h3>Genres</h3> 
                     </a>
-                    <a className='nav-link' href='#'>
+                    <Link className='nav-link' to={'/search'}>
                         <FontAwesomeIcon icon={faMagnifyingGlass} className='fa-lg' />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

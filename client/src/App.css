@@ -116,15 +116,6 @@
 
 /*  -------- MOVIES AND SHOWS PAGE --------  */
 
-.backdrop-holder {
-  margin: 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
-
 .single-watch-section {
   display:flex;
   justify-content: space-between;

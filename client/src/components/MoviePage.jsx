@@ -21,13 +21,8 @@ function MoviePage() {
         fetchMovie();
       }, []);
 
-      const backdrop = {
-        backgroundImage:`url(https://image.tmdb.org/t/p/w500${singleMovie.backdrop_path})`,
-      }
-      
       return (
         <>
-        <div className="backdrop-holder" style={backdrop}>
             <div className='single-watch-section' >
                         <>
                         <div className='watch-details' >
@@ -47,7 +42,6 @@ function MoviePage() {
                         </div>
                         </>
                 </div>
-            </div>
             </>
       )
 }
