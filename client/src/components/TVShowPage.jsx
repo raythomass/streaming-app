@@ -44,12 +44,17 @@ function TVShowPage() {
             </>
         </div>
         <div className="show-seasons">
-            {singleShow.seasons?.map((season) => (
-                <>
-                <p className="season-name">{season.name}</p>
-                <img src={`https://image.tmdb.org/t/p/w500${season.poster_path}`}></img>
-                </>
-            ))}
+            <h2>Seasons:</h2>
+            <div className="season-each">
+                {singleShow.seasons?.map((season) => (
+                    <>
+                    <div>
+                        {/* <p className="season-name">{season.name}</p> */}
+                        <img className="season-poster" src={`https://image.tmdb.org/t/p/w500${season.poster_path}`}></img>
+                    </div>
+                    </>
+                ))}
+            </div>
         </div>
         </>
       )
