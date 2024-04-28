@@ -178,3 +178,18 @@
   border-radius: 7px;
 }
 
+
+/*  -------- SEARCH PAGE AND RESULTS --------  */
+
+.search-results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
+
+.search-img {
+  max-width: 200px;
+}

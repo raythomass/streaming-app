@@ -49,13 +49,16 @@ function SearchPage() {
             handleFormSubmit={handleFormSubmit}
             handleInputChange={handleInputChange}
             />
+            <div className="search-results-container">
             {result.map((res) => (
                 <>
-                <SearchResults
-                    title={res.original_title}
-                />
+                    <SearchResults
+                        title={res.original_title}
+                        poster={res.poster_path}
+                    />
                 </>
             ))}
+            </div>
         </>
     )
 };
