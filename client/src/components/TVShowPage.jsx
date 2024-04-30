@@ -15,15 +15,14 @@ function TVShowPage() {
         console.log(data);
     }
 
-    
-
     useEffect(() => {
         fetchShow();
       }, []);
+
       
       return (
         <>
-        {/* <h1>Hello Movie Page</h1> */}
+        <div className="tv-page">
         <div className='single-watch-section'>
             <>
             <div className='watch-details' >
@@ -55,6 +54,7 @@ function TVShowPage() {
                     </>
                 ))}
             </div>
+        </div>
         </div>
         </>
       )

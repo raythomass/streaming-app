@@ -23,6 +23,7 @@ function MoviePage() {
 
       return (
         <>
+        <div className="movie-page">
             <div className='single-watch-section' >
                         <>
                         <div className='watch-details' >
@@ -42,6 +43,7 @@ function MoviePage() {
                         </div>
                         </>
                 </div>
+            </div>
             </>
       )
 }
