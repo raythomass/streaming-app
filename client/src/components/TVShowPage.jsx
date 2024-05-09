@@ -5,8 +5,10 @@ import API from "../utils/API";
 function TVShowPage() {
 
     const [singleShow, setSingleShow] = useState([]);
+    const [singleSeason, setSingleSeason] = useState([]);
 
     const { id } = useParams();
+    const seasonID = singleShow.seasons
 
     const fetchShow = async () => {
         const { data } = await API.fetchSingleShow(id)
@@ -15,8 +17,16 @@ function TVShowPage() {
         console.log(data);
     }
 
+    const fetchSeason = async () => {
+        const {data} = await API.fetchSingleSeason(id, seasonID)
+
+        setSingleSeason(data);
+        console.log(data);
+    }
+
     useEffect(() => {
         fetchShow();
+        fetchSeason();
       }, []);
 
       
@@ -42,6 +52,17 @@ function TVShowPage() {
             </div>
             </>
         </div>
+
+        <>
+                <div>
+                    <label htmlFor="seasons"></label>
+                        <select name="seasons" id="season-names">
+                            <option>{singleSeason.name}</option>
+                        </select>
+                </div>
+                </>
+        
+
         <div className="show-seasons">
             <h2>Seasons:</h2>
             <div className="season-each">

@@ -31,9 +31,14 @@ const fetchSingleShow = async (id) => {
     return axios.get(`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`)
 }
 
+const fetchSingleSeason = async (id, seasonID) => {
+    return axios.get(`https://api.themoviedb.org/3/tv/${id}/season/${seasonID}?api_key=${apiKey}`)
+}
+
 
 export default {
     fetchSingleMovie,
     fetchShows,
-    fetchSingleShow
+    fetchSingleShow,
+    fetchSingleSeason
 }
