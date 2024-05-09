@@ -82,7 +82,8 @@
 
 .homepage {
   font-family: "Manrope", sans-serif;
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: rgb(56,141,240);
+background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);
 }
 
 .page-title {
@@ -116,13 +117,15 @@
 /*  -------- MOVIES AND SHOWS PAGE --------  */
 
 .tv-page {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: rgb(56,141,240);
+  background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);
   color: white;
 }
 
 
 .movie-page {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: rgb(56,141,240);
+background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);
 }
 
 .single-watch-section {
