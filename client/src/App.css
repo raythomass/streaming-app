@@ -82,6 +82,7 @@
 
 .homepage {
   font-family: "Manrope", sans-serif;
+  padding-bottom: 5%;
   background: rgb(56,141,240);
   background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);
 }
@@ -121,13 +122,14 @@
   background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);
   color: white;
   height: 100%;
+  padding-bottom: 5%;
 }
 
 
 .movie-page {
   background: rgb(56,141,240);
   background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);
-  height: 100%;
+  height: 100vh;
 }
 
 .single-watch-section {
