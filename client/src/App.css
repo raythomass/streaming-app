@@ -238,3 +238,22 @@
 .search-img {
   max-width: 200px;
 }
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.search-input {
+  padding-left: 10% ;
+  padding-right: 10% ;
+  padding-top: 20px ;
+  padding-bottom: 20px ;
+  font-size: 20px;
+}
+
+.search-submit {
+}

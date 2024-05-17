@@ -1,24 +1,24 @@
 export default function SearchBar(props) {
 
     return (
-        <div>
+        <div className="search">
             <input
-          onChange={props.handleInputChange}
-          value={props.value}
-          name="search"
-          type="text"
-          className=""
-          placeholder="Search For a Movie"
-          id="search"
-        />
+              onChange={props.handleInputChange}
+              value={props.value}
+              name="search"
+              type="text"
+              className="search-input"
+              placeholder="Search For a Movie"
+              id="search"
+            />
         <br />
-        <button
-          onClick={props.handleFormSubmit}
-          className=""
-          type="submit"
-        >
-          Search
-        </button>
+            <button
+              onClick={props.handleFormSubmit}
+              className="search-submit"
+              type="submit"
+              >
+              Search
+            </button>
         </div>
     )
 };
