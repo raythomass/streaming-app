@@ -39,7 +39,7 @@ function HomePage () {
                     <>
                     <div className='movie-teaser'>
                         <Link to={`/MoviePage/${movie.id}`}>
-                            <MoviePoster poster={movie.poster_path} title={movie.original_title}/>
+                            <MoviePoster poster={movie.poster_path} title={movie.title}/>
                         </Link>
                     </div>
                     </>

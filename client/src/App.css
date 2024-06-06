@@ -44,7 +44,7 @@
 
 /*  -------- DIV SURROUNDING OUTLET --------  */
 .all {
-  min-height: 800px;
+  min-height: 100vh;
   max-height: 100%;
   background: rgb(56,141,240);
   background: radial-gradient(circle, rgba(56,141,240,1) 0%, rgba(11,33,60,1) 100%);

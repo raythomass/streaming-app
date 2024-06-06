@@ -27,7 +27,7 @@ function MoviePage() {
             <div className='single-watch-section' >
                     <>
                     <div className='watch-details' >
-                        <p className="watch-title">{singleMovie.original_title}</p>
+                        <p className="watch-title">{singleMovie.title}</p>
                         <div className="watch-small-details">
                             <p>{singleMovie.release_date}</p>
                             <p>{singleMovie.runtime} minutes</p>
