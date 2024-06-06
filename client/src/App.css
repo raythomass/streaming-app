@@ -125,12 +125,17 @@
 
 .tv-page {
   color: white;
-  padding-bottom: 5%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 3%;
 }
 
 
 .movie-page {
-  padding-bottom: 5%;
+  color: white;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 3%;
 }
 
 .single-watch-section {
