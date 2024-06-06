@@ -7,6 +7,7 @@ import MoviePage from './components/MoviePage.jsx';
 import TVShows from './pages/TVShows.jsx';
 import TVShowPage from './components/TVShowPage.jsx';
 import SearchPage from './pages/SearchPage.jsx';
+import SearchMedia from './components/SearchMedia.jsx';
 import './index.css';
 
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter ([
       {
         path: '/search',
         element: <SearchPage/>
+      },
+      {
+        path: '/search/:id',
+        element: <SearchMedia/>
       }
     ]
   }
