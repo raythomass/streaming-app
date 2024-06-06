@@ -61,7 +61,7 @@ function SearchPage() {
                     <>
                         <Link to={`/search/${res.id}`}>
                         <SearchResults
-                            title={res.original_title}
+                            title={res.title}
                             poster={res.poster_path}
                         />
                         </Link>
