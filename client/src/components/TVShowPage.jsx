@@ -59,7 +59,7 @@ function TVShowPage() {
                 <label htmlFor="seasons" className="season-name"></label>
                     <select name="seasons" id="season-names">
                         {singleShow.seasons?.map((each) => (
-                            <><option className="seasonID">{each.id}</option></>  
+                            <><option className="seasonID">{each.name}</option></>  
                         ))}
                 </select>
             </div>
@@ -67,7 +67,12 @@ function TVShowPage() {
             <div>
                 {singleSeason.episodes?.map((each) => (
                     <>
-                    <h3>{each.name}</h3>
+                    <div className="episode-cont">
+                        <h3>{each.name}</h3>
+                        <p>{each.runtime} minutes</p>
+                        <p>{each.overview}</p>
+                        <img className="single-watch-img" src={`https://image.tmdb.org/t/p/w500${each.still_path}`}></img>
+                    </div>
                     </>
                 ))}
             </div>
