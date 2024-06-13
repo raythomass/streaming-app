@@ -51,6 +51,10 @@
 }
 
 
+
+
+
+
 /*  -------- NAVBAR --------  */
 .nav {
   color: white;
@@ -86,6 +90,10 @@
 }
 
 
+
+
+
+
 /*  -------- HOMEPAGE --------  */
 
 .homepage {
@@ -119,6 +127,10 @@
 .poster-img:hover {
   max-width: 215px; 
 }
+
+
+
+
 
 
 /*  -------- MOVIES AND SHOWS PAGE --------  */
@@ -211,6 +223,18 @@
   transition: 0.1s ease-in-out;
 }
 
+
+
+
+
+
+/*  -------- TV SHOW SEASONS --------  */
+
+.season-name {
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+
 .show-seasons {
   font-family: "Manrope", sans-serif;
   margin-left: 20%;
@@ -227,6 +251,9 @@
 .season-poster {
   max-width: 175px;
 }
+
+
+
 
 
 /*  -------- SEARCH PAGE AND RESULTS --------  */
