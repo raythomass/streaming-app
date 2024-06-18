@@ -50,7 +50,8 @@ function SearchPage() {
     return(
         <>
             <div className="search-container">
-                <h1 className="search-title">Hello Search Page</h1>
+                {/* <h1 className="search-title">Hello Search Page</h1> */}
+                <div className="search-margin"></div>
                 <SearchBar 
                 value={search}
                 handleFormSubmit={handleFormSubmit}
