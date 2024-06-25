@@ -16,9 +16,6 @@ function Nav() {
                     <Link className='nav-link' to={'/tvshows'}>
                         <h3>TV Shows</h3> 
                     </Link>
-                    <a className='nav-link' href='#'>
-                        <h3>Genres</h3> 
-                    </a>
                     <Link className='nav-link' to={'/search'}>
                         <FontAwesomeIcon icon={faMagnifyingGlass} className='fa-lg' />
                     </Link>
