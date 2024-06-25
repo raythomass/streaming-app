@@ -49,9 +49,8 @@ function SearchPage() {
 
     return(
         <>
+        <div className="search-page">
             <div className="search-container">
-                {/* <h1 className="search-title">Hello Search Page</h1> */}
-                <div className="search-margin"></div>
                 <SearchBar 
                 value={search}
                 handleFormSubmit={handleFormSubmit}
@@ -70,6 +69,8 @@ function SearchPage() {
                 ))}
                 </div>
             </div>
+
+        </div>
         </>
     )
 };

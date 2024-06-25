@@ -26,13 +26,6 @@ function TVShows () {
         console.log(shows);
     };
 
-    // const fetchTVShows = async () => {
-    //     const data  =  await API.fetchShows();
-
-    //     await setShows(data);
-    //     console.log(shows)
-    // };
-
     useEffect(() => {
         fetchShows()
     },[])
