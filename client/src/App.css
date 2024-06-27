@@ -261,6 +261,32 @@
   max-width: 175px;
 }
 
+.episode-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 2%;
+}
+
+.episode-container {
+  padding: 1%;
+  border: solid 1px white;
+  border-radius: 10px;
+  width: 15%;
+}
+
+
+.episode-img-container {
+  /* border: solid 1px red; */
+  max-width: 100%;
+}
+
+.episode-img-container img {
+  height: 200px;
+  width: 100%;
+}
+
+
 
 
 
