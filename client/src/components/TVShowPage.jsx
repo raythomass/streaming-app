@@ -64,14 +64,16 @@ function TVShowPage() {
                 </select>
             </div>
 
-            <div>
+            <div className="episode-block">
                 {singleSeason.episodes?.map((each) => (
                     <>
-                    <div className="episode-cont">
+                    <div className="episode-container">
                         <h3>{each.name}</h3>
                         <p>{each.runtime} minutes</p>
                         <p>{each.overview}</p>
-                        <img className="single-watch-img" src={`https://image.tmdb.org/t/p/w500${each.still_path}`}></img>
+                        <div className="episode-img-container">
+                            <img className="single-watch-img" src={`https://image.tmdb.org/t/p/w500${each.still_path}`}></img>  
+                        </div>
                     </div>
                     </>
                 ))}
