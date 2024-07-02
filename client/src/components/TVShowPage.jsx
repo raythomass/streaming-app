@@ -68,9 +68,12 @@ function TVShowPage() {
                 {singleSeason.episodes?.map((each) => (
                     <>
                     <div className="episode-container">
-                        <h3>{each.name}</h3>
-                        <p>{each.runtime} minutes</p>
-                        <p>{each.overview}</p>
+                        <div className="episode-details">
+                            <p> Episode {each.episode_number}</p>
+                            <h3>{each.name}</h3>
+                            <p>{each.runtime} minutes</p>
+                            <p>{each.overview}</p>
+                        </div>
                         <div className="episode-img-container">
                             <img className="single-watch-img" src={`https://image.tmdb.org/t/p/w500${each.still_path}`}></img>  
                         </div>
@@ -78,21 +81,6 @@ function TVShowPage() {
                     </>
                 ))}
             </div>
-        
-        
-
-        {/* <div className="show-seasons">
-            <h2>Seasons:</h2>
-            <div className="season-each">
-                {singleShow.seasons?.map((season) => (
-                    <>
-                    <div>
-                        <img className="season-poster" src={`https://image.tmdb.org/t/p/w500${season.poster_path}`}></img>
-                    </div>
-                    </>
-                ))}
-            </div>
-        </div> */}
         </div>
         
       )

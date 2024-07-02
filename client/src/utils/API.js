@@ -19,10 +19,6 @@ const fetchShows = async () => {
 
 };
 
-// const fetchShows = async () => {
-//     return axios.get(`https://api.themoviedb.org/3/trending/tv/day?api_key=${apiKey}`)
-// }
-
 const fetchSingleMovie = async (id) => {
     return axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 }
