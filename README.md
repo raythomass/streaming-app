@@ -7,14 +7,10 @@ This application acts a streaming app that is capable of streaming almost any mo
 <br/>
 The motivation behind this project was to practice and refine my React skills as well as understanding how to better fetch data from an API and render the information into the application. Throughout this project I was constantly learning how to better manipulate the data to display the information I wanted as well as learning new React hooks.
 
-## Table of Contents (Optional)
+## Future Plans and Additions
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+<li>Render tv show episodes based on selected season</li>
+<li>Add login and sign up functionality</li>
 
 ## Installation
 
