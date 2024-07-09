@@ -9,7 +9,7 @@ The motivation behind this project was to practice and refine my React skills as
 
 ## Future Plans and Additions
 
-<li>Render tv show episodes based on selected season</li>
+<li>Display TV show episodes based on selected season</li>
 <li>Add login and sign up functionality</li>
 
 ## Installation
