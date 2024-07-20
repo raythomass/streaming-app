@@ -22,7 +22,9 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ![Screenshot of Ray's Streaming App] (https://github.com/raythomass/streaming-app/blob/a6611b0317352c83a5088ffe6555e40e7c32e1b9/assets/images/raysstreamingapp.jpg) ]
+<br>
+![Screenshot of Ray's Streaming App] (https://github.com/raythomass/streaming-app/assets/images/raysstreamingapp.jpg) ]
+<br/>
 
 ## Credits
 
