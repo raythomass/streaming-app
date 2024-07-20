@@ -24,6 +24,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ![Screenshot of Ray's Streaming App] (https://github.com/raythomass/streaming-app/assets/images/raysstreamingapp.jpg)
 
+<a href="" />
+<img src="https://github.com/raythomass/streaming-app/assets/images/raysstreamingapp.jpg" />
+
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
