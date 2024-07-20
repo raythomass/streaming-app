@@ -33,7 +33,7 @@ function HomePage () {
         <>
         {/* <h1>Hello World</h1> */}
         <div className='homepage'>
-            <h1 className='page-title'> Trending Now</h1>
+            <h1 className='page-title'> Trending Movies</h1>
             <div className='movie-list'>
                 {movies.map((movie) => (
                     <>

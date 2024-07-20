@@ -35,7 +35,7 @@ function TVShows () {
     return (
         <>
         <div className='homepage'>
-            <h1 className="page-title"> TV Shows</h1>
+            <h1 className="page-title"> Trending TV Shows</h1>
             <div className='movie-list'>
                 {shows && shows.map((show) => (
                     <>
