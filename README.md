@@ -17,12 +17,9 @@ The motivation behind this project was to practice and refine my React skills as
 To install the project to your local environment, clone the repo to your machine and open it up in your text editor. Within your text editor, you will want to open the integrated terminal from the client folder and run the command `npm run dev`. This will run the site from your localhost.
 
 ## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-![Screenshot of Ray's Streaming App] (https://github.com/raythomass/streaming-app/assets/images/raysstreamingapp.jpg)
+Using the streaming app is incredibly easy and will be familiar to anyone who has used a common streaming application before. Movies and TV Shows will populate the screen and a user can select what they desire to watch and are redirected to a new page that will give them various options related to the selection they chose. 
+<br>
+Users can access the site by clicking `https://raysstreamingapp.netlify.app/`or clicking the screenshot provided below.
 
 <a href="https://raysstreamingapp.netlify.app/" />
 <img src="https://github.com/raythomass/streaming-app/assets/images/raysstreamingapp.jpg" />
