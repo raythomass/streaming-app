@@ -19,7 +19,7 @@ To install the project to your local environment, clone the repo to your machine
 ## Usage
 Using the streaming app is incredibly easy and will be familiar to anyone who has used a common streaming application before. Movies and TV Shows will populate the screen and a user can select what they desire to watch and are redirected to a new page that will give them various options related to the selection they chose. 
 <br>
-Users can access the site by clicking "https://raysstreamingapp.netlify.app/" or clicking the screenshot provided below.
+Users can access the site by clicking https://raysstreamingapp.netlify.app/ or clicking the screenshot provided below.
 
 <a href="https://raysstreamingapp.netlify.app/" />
 <img src="https://github.com/raythomass/streaming-app/assets/images/raysstreamingapp.jpg" />
