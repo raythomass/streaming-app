@@ -14,7 +14,7 @@ The motivation behind this project was to practice and refine my React skills as
 
 ## Installation
 
-To install the project to your local environment, clone the repo to your machine and open it up in your text editor. Within your text editor, you will want to open the integrated terminal from the client foldr and run the command <npm run dev>. This will run the site from your localhost.
+To install the project to your local environment, clone the repo to your machine and open it up in your text editor. Within your text editor, you will want to open the integrated terminal from the client folder and run the command `npm run dev`. This will run the site from your localhost.
 
 ## Usage
 
